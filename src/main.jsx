@@ -8,16 +8,16 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 // Importa tu vista
-import GestionVentasServicios from "./features/dashboard/pages/gestionVentasServicios/gestionVentasServicios";
-import Landing from "./features/landing/landing";
+import GestionVentasServiciosProceso from "./features/dashboard/pages/gestionVentasServicios/ventasServiciosProceso";
+import GestionVentasServiciosFin from "./features/dashboard/pages/gestionVentasServicios/ventasServiciosFin";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         {/* Página temporal para mostrar tu tabla */}
-        <Route path="/ventas-servicios" element={<GestionVentasServicios/>} />
-        <Route path="/index" element={<Landing/>} />
+        <Route path="/ventasServiciosProceso" element={<GestionVentasServiciosProceso/>} />
+        <Route path="/ventasServiciosFin" element={<GestionVentasServiciosFin/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
