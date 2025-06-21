@@ -1,5 +1,7 @@
 import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { Link } from "react-router-dom";
+
 
 const datosMock = [
   {
@@ -77,9 +79,6 @@ const TablaVentasProceso = () => {
 
   {/* Botones */}
   <div className="flex gap-3">
-    <button className="btn btn-outline-primary ml-4 px-2 py-2 text-sm rounded-md whitespace-nowrap">
-      Solicitudes Terminadas
-    </button>
     <button className="btn btn-success px-5 py-2 text-sm rounded-md whitespace-nowrap">
       <i className="bi bi-file-earmark-excel-fill"></i>
       Descargar Excel

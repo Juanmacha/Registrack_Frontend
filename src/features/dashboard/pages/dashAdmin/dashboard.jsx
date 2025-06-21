@@ -1,6 +1,6 @@
 import React from "react";
 import SideBarGeneral from "../../components/sideBarGeneral";
-import TablaVentasProceso from "./components/tablaVentasProceso";
+import Dashboard from "./components/dashboardTitle"; // Asegúrate que la ruta sea correcta
 import NavBar from "../../components/navBarGeneral"; // Asegúrate que la ruta sea correcta
 
 const GestionVentasServiciosProceso = () => {
@@ -17,7 +17,7 @@ const GestionVentasServiciosProceso = () => {
         {/* Contenido de la tabla */}
         <div className="flex-1 flex mt-12 justify-center">
           <div className="w-full  px-4">
-            <TablaVentasProceso />
+            <Dashboard />
           </div>
         </div>
       </div>

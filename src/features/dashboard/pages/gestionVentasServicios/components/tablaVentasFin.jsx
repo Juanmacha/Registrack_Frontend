@@ -77,9 +77,6 @@ const TablaVentasFin = () => {
 
   {/* Botones */}
   <div className="flex gap-3">
-    <button className="btn btn-outline-primary ml-4 px-2 py-2 text-sm rounded-md whitespace-nowrap">
-      Solicitudes Terminadas
-    </button>
     <button className="btn btn-success px-5 py-2 text-sm rounded-md whitespace-nowrap">
       <i className="bi bi-file-earmark-excel-fill"></i>
       Descargar Excel
@@ -148,9 +145,9 @@ const TablaVentasFin = () => {
                       <button className="btn btn-outline-secondary btn-sm">
                         <i className="bi bi-pencil-fill"></i>
                       </button>
-                      <button className="btn btn-outline-secondary btn-sm">
+                      {/* <button className="btn btn-outline-secondary btn-sm">
                         <i className="bi bi-chat-left-text-fill"></i>
-                      </button>
+                      </button> */}
                       <button className="btn btn-outline-secondary btn-sm">
                         <i className="bi bi-eye-fill"></i>
                       </button>
