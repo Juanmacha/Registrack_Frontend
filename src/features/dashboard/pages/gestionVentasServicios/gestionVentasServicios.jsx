@@ -1,21 +1,28 @@
 import React from "react";
 import SideBarGeneral from "../../components/sideBarGeneral";
 import TablaVentasProceso from "./components/tablaVentasProceso";
+import NavBar from "../../components/navBarGeneral"; // Asegúrate que la ruta sea correcta
 
 const GestionVentasServicios = () => {
-    return (
-        <div className="flex h-screen w-screen overflow-hidden"> 
-            {/* Sidebar con ancho fijo */}
-            <SideBarGeneral />
+  return (
+    <div className="bg-[#eceded] flex h-screen w-screen overflow-hidden">
+      {/* Sidebar con ancho fijo */}
+      <SideBarGeneral />
 
-            {/* Contenido de la tabla */}
-            <div className="flex-1 flex items-center justify-center">
-                <div className="w-full max-w-6xl px-4">
-                    <TablaVentasProceso />
-                </div>
-            </div>
+      {/* Contenedor del contenido principal */}
+      <div className="flex-1 flex flex-col overflow-y-auto">
+        {/* Navbar superior */}
+        <NavBar titulo="Solicitudes de Servicios" />
+
+        {/* Contenido de la tabla */}
+        <div className="flex-1 flex mt-12 justify-center">
+          <div className="w-full  px-4">
+            <TablaVentasProceso />
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default GestionVentasServicios;

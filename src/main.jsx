@@ -9,6 +9,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // Importa tu vista
 import GestionVentasServicios from "./features/dashboard/pages/gestionVentasServicios/gestionVentasServicios";
+import Landing from "./features/landing/landing";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         {/* Página temporal para mostrar tu tabla */}
         <Route path="/ventas-servicios" element={<GestionVentasServicios/>} />
+        <Route path="/index" element={<Landing/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
